@@ -88,8 +88,7 @@ gulp.task('bs-reload', function () {
 
 gulp.task('default', ['css', 'js', 'handlebars', 'browser-sync'], function () {
     gulp.watch("src/less/**/*.less", ['css']);
-    gulp.watch("src/templates/**/*.json", ['handlebars']);
-    gulp.watch("src/templates/**/*.hbs", ['handlebars']);
+    gulp.watch("src/templates/**/*", ['handlebars']);
     gulp.watch("src/js/*.js", ['js']);
     gulp.watch("app/*.html", ['bs-reload']);
 });
